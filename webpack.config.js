@@ -1,9 +1,33 @@
+// const path = require('path')
+// const HtmlWebPackPlugin = require('html-webpack-plugin')
+
+// module.exports = {
+//     entry: './app/index.js',
+//     ouput: {
+//         path: path.resolve(__dirname, 'dist'),
+//         filename: 'index_bundle.js'
+//     },
+//     module: {
+//         rules: [
+//             { test: /\.(js)$/, use: 'babel-loader'},
+//             { test: /\.css$/, use: ['style-loader', 'css-loader']}
+//         ]
+//     },
+//     mode: 'development',
+//     plugins: [
+//         new HtmlWebPackPlugin({
+//             template: 'app/index.html'
+//         })
+//     ]
+// }
+
+
 const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry: './app/index.js',
-    ouput: {
+    output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index_bundle.js'
     },
@@ -16,7 +40,30 @@ module.exports = {
     mode: 'development',
     plugins: [
         new HtmlWebPackPlugin({
-            template: '/app/index.html'
+            template: 'app/index.html'
         })
     ]
 }
+
+// const path = require('path')
+// const HtmlWebpackPlugin = require('html-webpack-plugin')
+
+// module.exports = {
+//   entry: './app/index.js',
+//   output: {
+//     path: path.resolve(__dirname, 'dist'),
+//     filename: 'index_bundle.js'
+//   },
+//   module: {
+//     rules: [
+//       { test: /\.(js)$/, use: 'babel-loader' },
+//       { test: /\.css$/, use: [ 'style-loader', 'css-loader' ]}
+//     ]
+//   },
+//   mode: 'development',
+//   plugins: [
+//     new HtmlWebpackPlugin({
+//       template: 'app/index.html'
+//     })
+//   ]
+// }
